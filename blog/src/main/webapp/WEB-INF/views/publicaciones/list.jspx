@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_tifon_blog_classes_Publicacion" items="${publicaciones}" z="freCibkhJJ6ihiB4B5fgB81b7wM=">
+        <table:table data="${publicaciones}" id="l_com_tifon_blog_classes_Publicacion" path="/publicaciones" typeIdFieldName="publicacion_id" z="SbUfiEL2qto90X2u4vDXCo3DLSI=">
+            <table:column id="c_com_tifon_blog_classes_Publicacion_titulo" property="titulo" z="BHIVkZSAuAzNASs55VoY2wL4u4w="/>
+            <table:column id="c_com_tifon_blog_classes_Publicacion_resumen" property="resumen" z="Hi0/nvsgUHKBjXiIqJSnnFf1Clc="/>
+            <table:column id="c_com_tifon_blog_classes_Publicacion_cuerpo" property="cuerpo" z="QSMc2p0Km3921Z7gpFzmqsDbnNo="/>
+            <table:column date="true" dateTimePattern="${publicacion_fmodificacion_date_format}" id="c_com_tifon_blog_classes_Publicacion_fmodificacion" property="fmodificacion" z="XlXburXBqRB6gcCB5gPSEvyoCgQ="/>
+            <table:column date="true" dateTimePattern="${publicacion_fpublicacion_date_format}" id="c_com_tifon_blog_classes_Publicacion_fpublicacion" property="fpublicacion" z="I4VnguUnJzJEwSXKo9lQm8ItfSg="/>
+        </table:table>
+    </page:list>
+</div>

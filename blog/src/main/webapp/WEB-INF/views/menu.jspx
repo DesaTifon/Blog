@@ -7,5 +7,9 @@
             <menu:item id="i_usuario_new" messageCode="global_menu_new" url="/usuarios?form" z="RG1gCsiZQjg1HLDzXbHKht6yDkw="/>
             <menu:item id="i_usuario_list" messageCode="global_menu_list" url="/usuarios?page=1&amp;size=${empty param.size ? 10 : param.size}" z="P7ZIPrcTTBR41JYD0QldbYgsZrM="/>
         </menu:category>
+        <menu:category id="c_publicacion" z="qAqJ7U0pUSMU/iq1gPpJci9TeKQ=">
+            <menu:item id="i_publicacion_new" messageCode="global_menu_new" url="/publicaciones?form" z="f5/4xuDvCPHh8hX1VW2Renec/9A="/>
+            <menu:item id="i_publicacion_list" messageCode="global_menu_list" url="/publicaciones?page=1&amp;size=${empty param.size ? 10 : param.size}" z="d1LOYL+nY7tilQHeUujz+Th2DbE="/>
+        </menu:category>
     </menu:menu>
 </div>

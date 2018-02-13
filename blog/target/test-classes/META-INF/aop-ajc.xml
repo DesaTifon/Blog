@@ -1,9 +1,13 @@
 <aspectj>
 <aspects>
+<aspect name="com.tifon.blog.classes.PublicacionDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.tifon.blog.classes.UsuarioDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.tifon.blog.classes.PublicacionIntegrationTest_Roo_Configurable"/>
 <aspect name="com.tifon.blog.classes.UsuarioDataOnDemand_Roo_Configurable"/>
 <aspect name="com.tifon.blog.classes.UsuarioIntegrationTest_Roo_Configurable"/>
+<aspect name="com.tifon.blog.classes.PublicacionDataOnDemand_Roo_Configurable"/>
 <aspect name="com.tifon.blog.classes.UsuarioIntegrationTest_Roo_IntegrationTest"/>
-<aspect name="com.tifon.blog.classes.UsuarioDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.tifon.blog.classes.PublicacionIntegrationTest_Roo_IntegrationTest"/>
 </aspects>
 </aspectj>
 

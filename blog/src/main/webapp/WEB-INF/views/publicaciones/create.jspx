@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_tifon_blog_classes_Publicacion" modelAttribute="publicacion" path="/publicaciones" render="${empty dependencies}" z="xr4J2XFaiBo3x/UlAyUth/RWwiQ=">
+        <field:input field="titulo" id="c_com_tifon_blog_classes_Publicacion_titulo" required="true" z="NO1rgFT54T1u4vbAI/NY50Z4jyQ="/>
+        <field:textarea field="resumen" id="c_com_tifon_blog_classes_Publicacion_resumen" required="true" z="ffmhhZciJnhkAA9HCcPnX51T1bc="/>
+        <field:input field="cuerpo" id="c_com_tifon_blog_classes_Publicacion_cuerpo" required="true" z="vnon0iV/sdQ0yRB+OobMByiBesU="/>
+        <field:datetime dateTimePattern="${publicacion_fmodificacion_date_format}" field="fmodificacion" id="c_com_tifon_blog_classes_Publicacion_fmodificacion" z="b0EQeoZjQe5JhGnWVpJHQKt7xa4="/>
+        <field:datetime dateTimePattern="${publicacion_fpublicacion_date_format}" field="fpublicacion" id="c_com_tifon_blog_classes_Publicacion_fpublicacion" z="V5UfUocK5qfQFjC6A4TVcST3Y80="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_tifon_blog_classes_Publicacion" render="${not empty dependencies}" z="4fpTaM9DU1JAIloIRq2POgj/Cwo="/>
+</div>

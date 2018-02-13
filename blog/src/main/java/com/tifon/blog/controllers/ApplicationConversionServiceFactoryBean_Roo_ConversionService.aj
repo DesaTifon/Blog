@@ -3,6 +3,7 @@
 
 package com.tifon.blog.controllers;
 
+import com.tifon.blog.classes.Publicacion;
 import com.tifon.blog.classes.Usuario;
 import com.tifon.blog.controllers.ApplicationConversionServiceFactoryBean;
 import org.springframework.beans.factory.annotation.Configurable;
@@ -12,6 +13,30 @@ import org.springframework.format.FormatterRegistry;
 privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService {
     
     declare @type: ApplicationConversionServiceFactoryBean: @Configurable;
+    
+    public Converter<Publicacion, String> ApplicationConversionServiceFactoryBean.getPublicacionToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.tifon.blog.classes.Publicacion, java.lang.String>() {
+            public String convert(Publicacion publicacion) {
+                return new StringBuilder().append(publicacion.getTitulo()).append(' ').append(publicacion.getResumen()).append(' ').append(publicacion.getCuerpo()).append(' ').append(publicacion.getFmodificacion()).toString();
+            }
+        };
+    }
+    
+    public Converter<Integer, Publicacion> ApplicationConversionServiceFactoryBean.getIdToPublicacionConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Integer, com.tifon.blog.classes.Publicacion>() {
+            public com.tifon.blog.classes.Publicacion convert(java.lang.Integer id) {
+                return Publicacion.findPublicacion(id);
+            }
+        };
+    }
+    
+    public Converter<String, Publicacion> ApplicationConversionServiceFactoryBean.getStringToPublicacionConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.tifon.blog.classes.Publicacion>() {
+            public com.tifon.blog.classes.Publicacion convert(String id) {
+                return getObject().convert(getObject().convert(id, Integer.class), Publicacion.class);
+            }
+        };
+    }
     
     public Converter<Usuario, String> ApplicationConversionServiceFactoryBean.getUsuarioToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<com.tifon.blog.classes.Usuario, java.lang.String>() {
@@ -38,6 +63,9 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     }
     
     public void ApplicationConversionServiceFactoryBean.installLabelConverters(FormatterRegistry registry) {
+        registry.addConverter(getPublicacionToStringConverter());
+        registry.addConverter(getIdToPublicacionConverter());
+        registry.addConverter(getStringToPublicacionConverter());
         registry.addConverter(getUsuarioToStringConverter());
         registry.addConverter(getIdToUsuarioConverter());
         registry.addConverter(getStringToUsuarioConverter());

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_tifon_blog_classes_Publicacion" idField="publicacion_id" modelAttribute="publicacion" path="/publicaciones" versionField="Version" z="plcIS0dILtsqUB9IdacZT8Uaivw=">
+        <field:input field="titulo" id="c_com_tifon_blog_classes_Publicacion_titulo" required="true" z="NO1rgFT54T1u4vbAI/NY50Z4jyQ="/>
+        <field:textarea field="resumen" id="c_com_tifon_blog_classes_Publicacion_resumen" required="true" z="ffmhhZciJnhkAA9HCcPnX51T1bc="/>
+        <field:input field="cuerpo" id="c_com_tifon_blog_classes_Publicacion_cuerpo" required="true" z="vnon0iV/sdQ0yRB+OobMByiBesU="/>
+        <field:datetime dateTimePattern="${publicacion_fmodificacion_date_format}" field="fmodificacion" id="c_com_tifon_blog_classes_Publicacion_fmodificacion" z="b0EQeoZjQe5JhGnWVpJHQKt7xa4="/>
+        <field:datetime dateTimePattern="${publicacion_fpublicacion_date_format}" field="fpublicacion" id="c_com_tifon_blog_classes_Publicacion_fpublicacion" z="V5UfUocK5qfQFjC6A4TVcST3Y80="/>
+    </form:update>
+</div>

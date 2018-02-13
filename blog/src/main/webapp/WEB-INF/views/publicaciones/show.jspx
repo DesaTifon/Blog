@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_tifon_blog_classes_Publicacion" object="${publicacion}" path="/publicaciones" z="nmjB2ITziB2c6oy4OG/E+N9Pfnk=">
+        <field:display field="titulo" id="s_com_tifon_blog_classes_Publicacion_titulo" object="${publicacion}" z="LsECWEwOTtPok3EDDRV4Hz6H+q8="/>
+        <field:display field="resumen" id="s_com_tifon_blog_classes_Publicacion_resumen" object="${publicacion}" z="J7nyDBzL6iVZKiZUAFjmfw6IVcQ="/>
+        <field:display field="cuerpo" id="s_com_tifon_blog_classes_Publicacion_cuerpo" object="${publicacion}" z="ttK3DqvDskbZH8YULDulYCgSWxg="/>
+        <field:display date="true" dateTimePattern="${publicacion_fmodificacion_date_format}" field="fmodificacion" id="s_com_tifon_blog_classes_Publicacion_fmodificacion" object="${publicacion}" z="27UDKsvnSMExv2zwElcVye+m5v0="/>
+        <field:display date="true" dateTimePattern="${publicacion_fpublicacion_date_format}" field="fpublicacion" id="s_com_tifon_blog_classes_Publicacion_fpublicacion" object="${publicacion}" z="WcEGmtEAUEIO6vL6PtwGQU1P68s="/>
+    </page:show>
+</div>
