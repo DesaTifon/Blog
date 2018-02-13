@@ -1,0 +1,12 @@
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2018-02-13 12:20:50
+project --topLevelPackage com.tifon.blog --projectName "blog" --java 8 --packaging WAR
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2018-02-13 12:20:51
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2018-02-13 12:21:23
+jpa setup --provider HIBERNATE --database MYSQL --databaseName blogdb --userName root --password root
+entity jpa --class ~.classes.Usuario --testAutomatically --identifierField usuario_id --identifierType java.lang.Integer
+field string --fieldName nombre --sizeMin 2 --sizeMax 20 --notNull
+field string --fieldName apellido --sizeMin 2 --sizeMax 20 --notNull
+field string --fieldName email --sizeMin 2 --sizeMax 30 --notNull --unique
+web mvc setup
+web mvc language --code es
+web mvc all --package ~.controllers

@@ -1,0 +1,12 @@
+<aspectj>
+<aspects>
+<aspect name="com.tifon.blog.classes.Usuario_Roo_Jpa_Entity"/>
+<aspect name="com.tifon.blog.classes.Usuario_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.tifon.blog.controllers.ApplicationConversionServiceFactoryBean_Roo_ConversionService"/>
+<aspect name="com.tifon.blog.controllers.UsuarioController_Roo_Controller"/>
+<aspect name="com.tifon.blog.classes.Usuario_Roo_ToString"/>
+<aspect name="com.tifon.blog.classes.Usuario_Roo_JavaBean"/>
+<aspect name="com.tifon.blog.classes.Usuario_Roo_Configurable"/>
+</aspects>
+</aspectj>
+

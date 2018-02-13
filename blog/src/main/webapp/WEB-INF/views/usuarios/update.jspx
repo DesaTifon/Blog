@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_tifon_blog_classes_Usuario" idField="usuario_id" modelAttribute="usuario" path="/usuarios" versionField="Version" z="cFrnpHwbn+cP4dX4B3zxpStnHjo=">
+        <field:input field="nombre" id="c_com_tifon_blog_classes_Usuario_nombre" max="20" min="2" required="true" z="IiF5WFGZhFFtgipx33LTcH14vZQ="/>
+        <field:input field="apellido" id="c_com_tifon_blog_classes_Usuario_apellido" max="20" min="2" required="true" z="9ebEfJNF2AmLSGAjPaFb8qLr30U="/>
+        <field:input field="email" id="c_com_tifon_blog_classes_Usuario_email" max="30" min="2" required="true" validationMessageCode="field_invalid_email" z="rNn0Th1R53Owtba5Tu2EotxML4c="/>
+    </form:update>
+</div>

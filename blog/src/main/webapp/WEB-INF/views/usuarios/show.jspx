@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_tifon_blog_classes_Usuario" object="${usuario}" path="/usuarios" z="qbK5X+7TcpVwDq1nERBPuPjOw+Q=">
+        <field:display field="nombre" id="s_com_tifon_blog_classes_Usuario_nombre" object="${usuario}" z="nlmxD0Qk142CPz6/VRsAOe7OOp0="/>
+        <field:display field="apellido" id="s_com_tifon_blog_classes_Usuario_apellido" object="${usuario}" z="ImNzsGsAZpYQ2k8CYsi6d+YjiEM="/>
+        <field:display field="email" id="s_com_tifon_blog_classes_Usuario_email" object="${usuario}" z="Ndj2fzmwgZXgM1Y4aBGGpilo9/c="/>
+    </page:show>
+</div>

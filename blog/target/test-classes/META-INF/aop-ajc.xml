@@ -1,0 +1,9 @@
+<aspectj>
+<aspects>
+<aspect name="com.tifon.blog.classes.UsuarioDataOnDemand_Roo_Configurable"/>
+<aspect name="com.tifon.blog.classes.UsuarioIntegrationTest_Roo_Configurable"/>
+<aspect name="com.tifon.blog.classes.UsuarioIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.tifon.blog.classes.UsuarioDataOnDemand_Roo_DataOnDemand"/>
+</aspects>
+</aspectj>
+

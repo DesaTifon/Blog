@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_tifon_blog_classes_Usuario" items="${usuarios}" z="NjYrTEEECSVo3toIZEq9EswfWIE=">
+        <table:table data="${usuarios}" id="l_com_tifon_blog_classes_Usuario" path="/usuarios" typeIdFieldName="usuario_id" z="0vWC1SVTP+fOL1+tnVMtRr9Df9E=">
+            <table:column id="c_com_tifon_blog_classes_Usuario_nombre" property="nombre" z="IR6HaHXkhbXwfd9H+SS3EWyS9t8="/>
+            <table:column id="c_com_tifon_blog_classes_Usuario_apellido" property="apellido" z="hN6igZxr4IKb3J1HRtsVafiao3o="/>
+            <table:column id="c_com_tifon_blog_classes_Usuario_email" property="email" z="H6kfg5CU+9S8NPt8P1mqinUlviA="/>
+        </table:table>
+    </page:list>
+</div>
